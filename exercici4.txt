@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "introdueix el titol de la pelicula que vols eliminar"
+read n
+echo "----------------concidencies----------------------"
+echo "                                                  "
+grep $n netflix2.csv
+echo "               "
+echo "VOLS ELIMINAR LES SEGUENTS PELICULES? [S/N]"
+read o
+
+if [ $o="S" ];
+then
+grep -v $n netflix2.csv > auxiliar
+mv auxiliar netflix2.csv
+fi
+
+if [ $o="s" ];
+then
+grep -v $n netflix2.csv > auxiliar
+mv auxiliar netflix2.csv
+fi

@@ -1,0 +1,32 @@
+exercici 2:
+escrire prog
+
+exercici 3:
+
+gdb (prog. a depurar)
+(com a consola a part)(gdb) run
+(gdb) list ---> mostra 10 primeres lineas del script
+(para poner break point)---> (gdb) break (n. linea)
+si hace run se ejecuta hasta la linea assignada en el break
+(gdb) print (variable dins del programa)
+$1= num 
+també es pot canviar numero variable:
+(gdb) set var i = 3
+(gdb) info b sale info del breakpoint g
+"" continue (segueix despres del breakpoint)
+
+per eliminar brakpoint
+(gdb) clear IDbreakpoint
+
+si es para en un bucle for i es fa continue tornara a detectar el break pint i es parara
+gdb break 9
+" " continue 
+
+(gdb) disable/enable breakpoint
+
+(gdb) next ejecuta la siguiente linea que sea necesario,
+sin saltar hasta el siguiente breakpoint. (a diferencia de continue)
+(gdb) step te "dice" todas las lineas de las funciones que son tuyas
+continue = c
+
+
